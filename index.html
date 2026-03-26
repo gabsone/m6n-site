@@ -5,94 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="m6n — editor Markdown desktop con export Word templato. Scrivi in Markdown, esporta con il tuo stile."
+      content="m6n — editor Markdown desktop con export Word templato. Scrivi in Markdown, esporta DOCX con il tuo stile, tutto in locale."
     />
     <title>m6n — m·arkdow·n</title>
-    <script type="module" crossorigin src="/m6n-site/assets/index-BgdRbv8Y.js"></script>
-    <link rel="stylesheet" crossorigin href="/m6n-site/assets/index-ag9V7zg6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/m6n-site/assets/index-CB1YCd-F.js"></script>
+    <link rel="stylesheet" crossorigin href="/m6n-site/assets/index-Bvku4V_I.css">
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+    <div class="page-bg" aria-hidden="true"></div>
+
     <header class="site-header">
       <div class="wrap header-inner">
-        <span class="logo" aria-hidden="true">m·</span>
+        <a class="brand" href="#" aria-label="m6n — inizio pagina">
+          <span class="brand-mark" aria-hidden="true">
+            <svg class="brand-svg" viewBox="0 0 40 40" width="40" height="40" role="img">
+              <title>m6n</title>
+              <rect class="brand-svg-frame" x="1" y="1" width="38" height="38" rx="10" />
+              <path
+                class="brand-svg-m"
+                d="M11 28V12h3.2l4.8 9.2L23.8 12H27v16h-2.8V16.5L19.5 28h-1.4l-4.7-11.5V28H11z"
+              />
+              <circle class="brand-svg-dot" cx="31" cy="20" r="2.2" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">m6n</span>
+            <span class="brand-tagline">m·arkdow·n</span>
+          </span>
+        </a>
         <nav class="nav" aria-label="Principale">
-          <a href="#caratteristiche">Caratteristiche</a>
+          <a href="#come-funziona">Come funziona</a>
+          <a href="#per-chi">Per chi</a>
+          <a href="#caratteristiche">Funzionalità</a>
           <a href="#stack">Stack</a>
-          <a href="#scarica">Scarica</a>
+          <a class="nav-cta" href="#scarica">Scarica</a>
         </nav>
       </div>
     </header>
 
     <main id="contenuto">
       <section class="hero wrap">
-        <p class="eyebrow">Editor Markdown desktop</p>
-        <h1>m6n <span class="muted">m·arkdow·n</span></h1>
-        <p class="lead">
-          Scrivi in <strong>Markdown</strong> ed esporta in <strong>Word</strong> (DOCX) applicando il tuo template
-          aziendale o personale. Tutto in locale, senza inviare contenuti a server esterni.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" id="link-releases" href="https://github.com/m6n/m6n/releases">Scarica</a>
-          <a class="btn btn-ghost" id="link-repo" href="https://github.com/m6n/m6n">Codice sorgente</a>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">App desktop · Windows e macOS</p>
+            <h1>
+              Dal Markdown al Word
+              <span class="hero-line2">con il <em>tuo</em> template</span>
+            </h1>
+            <p class="lead">
+              <strong>m6n</strong> è un editor Markdown che vive sul tuo computer: scrivi con anteprima live ed esporti
+              <strong>DOCX</strong> allineato al modello aziendale o personale — senza passare da cloud obbligatori.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" id="link-releases" href="https://github.com/m6n/m6n/releases">Scarica le release</a>
+              <a class="btn btn-ghost" id="link-repo" href="https://github.com/m6n/m6n">Sorgenti su GitHub</a>
+            </div>
+            <ul class="hero-trust" aria-label="In sintesi">
+              <li>Open source (MIT)</li>
+              <li>Elaborazione in locale</li>
+              <li>Nessuna telemetria nel core</li>
+            </ul>
+          </div>
+          <div class="hero-panel" aria-hidden="true">
+            <div class="hero-panel-inner">
+              <div class="mock-window">
+                <div class="mock-dots"><span></span><span></span><span></span></div>
+                <div class="mock-body">
+                  <div class="mock-md">
+                    <span class="mock-h"># Report Q1</span>
+                    <span class="mock-p">Testo in **Markdown** …</span>
+                  </div>
+                  <div class="mock-arrow">→</div>
+                  <div class="mock-doc">
+                    <span class="mock-doc-label">documento.docx</span>
+                    <span class="mock-doc-sub">stili dal template</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <section class="section wrap" id="come-funziona" aria-labelledby="titolo-come">
+        <h2 id="titolo-come" class="section-title">Come funziona</h2>
+        <p class="section-lead">Tre passaggi, zero sorprese: il flusso che ti aspetti da uno strumento da scrivania.</p>
+        <ol class="steps">
+          <li class="step-card">
+            <span class="step-num">1</span>
+            <h3>Scrivi in Markdown</h3>
+            <p>Editor con evidenziazione sintassi, ricerca e anteprima: resti concentrato sul contenuto.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num">2</span>
+            <h3>Scegli il template</h3>
+            <p>Associa un modello Word: titoli, stili e impaginazione seguono le regole del tuo DOCX.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num">3</span>
+            <h3>Esporta in DOCX</h3>
+            <p>Un clic e ottieni un file pronto da inviare, archiviare o revisionare in Word.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section section-tint wrap" id="per-chi" aria-labelledby="titolo-per-chi">
+        <h2 id="titolo-per-chi" class="section-title">Per chi è m6n</h2>
+        <p class="section-lead">Utile quando il Markdown è comodo ma il deliverable deve rispettare un modello Word.</p>
+        <ul class="audience-grid">
+          <li class="audience-card">
+            <h3>Team e aziende</h3>
+            <p>Documenti interni, note e report che devono rispettare il template corporate.</p>
+          </li>
+          <li class="audience-card">
+            <h3>Freelance e studi</h3>
+            <p>Proposte e relazioni: scrivi veloce, consegni in formato richiesto dal cliente.</p>
+          </li>
+          <li class="audience-card">
+            <h3>Scuola e ricerca</h3>
+            <p>Appunti in Markdown, consegne o bozze in Word quando serve la forma ufficiale.</p>
+          </li>
+        </ul>
+      </section>
+
       <section class="section wrap" id="caratteristiche" aria-labelledby="titolo-caratteristiche">
-        <h2 id="titolo-caratteristiche">Caratteristiche</h2>
+        <h2 id="titolo-caratteristiche" class="section-title">Funzionalità</h2>
+        <p class="section-lead">Tutto ciò che serve per lavorare bene sul testo, senza dipendere da un browser.</p>
         <ul class="feature-grid">
           <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">◇</span>
             <h3>Editor e anteprima</h3>
-            <p>Syntax highlighting, anteprima live e un flusso di lavoro pensato per documenti lunghi.</p>
+            <p>Syntax highlighting, anteprima live e flusso pensato anche per documenti lunghi.</p>
           </li>
           <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">◇</span>
             <h3>Export DOCX templato</h3>
-            <p>Genera file Word coerenti con il tuo modello: stili, copertina e struttura sotto controllo.</p>
+            <p>Word coerente con il tuo modello: struttura e stili sotto controllo.</p>
           </li>
           <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">◇</span>
             <h3>Libreria template</h3>
-            <p>Organizza e riusa i template sul tuo computer, senza dipendenze cloud obbligatorie.</p>
+            <p>Organizza e riusa i template in locale: nessun cloud obbligatorio.</p>
           </li>
           <li class="feature-card">
+            <span class="feature-icon" aria-hidden="true">◇</span>
             <h3>Tema chiaro / scuro</h3>
-            <p>Rispetta le preferenze di sistema o scegli il tema che preferisci.</p>
+            <p>Allineato al sistema o scelto manualmente, come preferisci lavorare.</p>
           </li>
-          <li class="feature-card">
-            <h3>Offline</h3>
-            <p>Nessuna telemetria nel core: i tuoi documenti restano sul dispositivo.</p>
+          <li class="feature-card feature-card-wide">
+            <span class="feature-icon" aria-hidden="true">◇</span>
+            <h3>Privacy by design</h3>
+            <p>Nessuna telemetria nel core: i contenuti restano sulla tua macchina.</p>
           </li>
         </ul>
       </section>
 
       <section class="section section-alt wrap" id="stack" aria-labelledby="titolo-stack">
-        <h2 id="titolo-stack">Tecnologie</h2>
-        <p class="stack-intro">
-          L’applicazione desktop combina un frontend moderno e un backend Rust affidabile.
-        </p>
-        <ul class="stack-list">
-          <li><strong>Tauri 2</strong> — app nativa leggera</li>
-          <li><strong>Svelte 5</strong> — interfaccia reattiva</li>
-          <li><strong>Rust</strong> — conversione Markdown → DOCX</li>
-          <li><strong>CodeMirror 6</strong> — editor</li>
+        <h2 id="titolo-stack" class="section-title">Stack tecnico</h2>
+        <p class="section-lead">Un’app nativa leggera: interfaccia moderna e motore Rust per la conversione.</p>
+        <ul class="stack-pills" role="list">
+          <li><span class="pill">Tauri 2</span> App desktop cross-platform</li>
+          <li><span class="pill">Svelte 5</span> Interfaccia reattiva</li>
+          <li><span class="pill">Rust</span> Markdown → DOCX</li>
+          <li><span class="pill">CodeMirror 6</span> Editor di testo</li>
         </ul>
       </section>
 
-      <section class="section wrap" id="scarica" aria-labelledby="titolo-scarica">
-        <h2 id="titolo-scarica">Prova m6n</h2>
-        <p>
-          Binari per Windows e macOS sono pubblicati nelle
-          <a id="link-releases-2" href="https://github.com/m6n/m6n/releases">Release su GitHub</a>.
-          Per sviluppatori: clona il repository e segue le istruzioni nel README del progetto.
-        </p>
+      <section class="cta-band wrap" id="scarica" aria-labelledby="titolo-scarica">
+        <div class="cta-inner">
+          <div class="cta-copy">
+            <h2 id="titolo-scarica">Pronto a provare m6n?</h2>
+            <p>
+              Binari per <strong>Windows</strong> e <strong>macOS</strong> sono nelle
+              <a id="link-releases-2" href="https://github.com/m6n/m6n/releases">release su GitHub</a>. Per compilare da
+              sorgente segui il README del repository.
+            </p>
+          </div>
+          <a class="btn btn-primary btn-lg" id="link-releases-cta" href="https://github.com/m6n/m6n/releases">Vai alle release</a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <p>MIT License — progetto open source</p>
-        <p class="footer-meta">
-          Questa pagina è il sito descrittivo del prodotto; l’app nativa è distribuita separatamente.
-        </p>
+        <div class="footer-brand">
+          <span class="footer-logo" aria-hidden="true">m·</span>
+          <div>
+            <p class="footer-title">m6n</p>
+            <p class="footer-meta">Sito descrittivo · l’app nativa si installa separatamente</p>
+          </div>
+        </div>
+        <p class="footer-license">Licenza MIT · progetto open source</p>
       </div>
     </footer>
 
