@@ -14,33 +14,45 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/m6n-site/assets/index-HcQeGwAl.js"></script>
-    <link rel="stylesheet" crossorigin href="/m6n-site/assets/index-DfktsoKK.css">
+    <script type="module" crossorigin src="/m6n-site/assets/index-CaYyqHg2.js"></script>
+    <link rel="stylesheet" crossorigin href="/m6n-site/assets/index-E1Ww17fL.css">
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Skip to content</a>
     <div class="page-bg" aria-hidden="true"></div>
 
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <div class="wrap header-inner">
-        <a class="brand" href="#" aria-label="m6n — home">
-          <span class="brand-mark" aria-hidden="true">
-            <svg class="brand-svg" viewBox="0 0 40 40" width="40" height="40" role="img">
-              <title>m6n</title>
-              <rect class="brand-svg-frame" x="1" y="1" width="38" height="38" rx="10" />
-              <path
-                class="brand-svg-m"
-                d="M11 28V12h3.2l4.8 9.2L23.8 12H27v16h-2.8V16.5L19.5 28h-1.4l-4.7-11.5V28H11z"
-              />
-              <circle class="brand-svg-dot" cx="31" cy="20" r="2.2" />
-            </svg>
-          </span>
-          <span class="brand-text">
-            <span class="brand-name">m6n</span>
-            <span class="brand-tagline">m·arkdow·n</span>
-          </span>
-        </a>
-        <div class="nav-scroll">
+        <div class="header-bar">
+          <a class="brand" href="#" aria-label="m6n — home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg class="brand-svg" viewBox="0 0 40 40" width="40" height="40" role="img">
+                <title>m6n</title>
+                <rect class="brand-svg-frame" x="1" y="1" width="38" height="38" rx="10" />
+                <path
+                  class="brand-svg-m"
+                  d="M11 28V12h3.2l4.8 9.2L23.8 12H27v16h-2.8V16.5L19.5 28h-1.4l-4.7-11.5V28H11z"
+                />
+                <circle class="brand-svg-dot" cx="31" cy="20" r="2.2" />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">m6n</span>
+              <span class="brand-tagline">m·arkdow·n</span>
+            </span>
+          </a>
+          <button
+            type="button"
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Open navigation menu"
+          >
+            <span class="nav-toggle-bars" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="nav-scroll" id="primary-nav">
           <nav class="nav" aria-label="Primary">
             <a href="#how-it-works">How it works</a>
             <a href="#ai-workflow">AI workflow</a>
