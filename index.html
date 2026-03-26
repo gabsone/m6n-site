@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="m6n — a lightweight native Markdown editor. Export to Word using your own templates. Local-first, no telemetry in the core, Windows and macOS."
+      content="m6n — turn AI- or human-written Markdown into Word (DOCX) with your own template. Fast, small, local-first. Windows and macOS."
     />
     <title>m6n — Markdown to Word, your templates, your machine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,8 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/m6n-site/assets/index-BdXrbstJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/m6n-site/assets/index-Bxsb93Di.css">
+    <script type="module" crossorigin src="/m6n-site/assets/index-CF7XuBW2.js"></script>
+    <link rel="stylesheet" crossorigin href="/m6n-site/assets/index-DIYiCmSk.css">
   </head>
   <body>
     <a class="skip-link" href="#contenuto">Skip to content</a>
@@ -42,10 +42,11 @@
         </a>
         <nav class="nav" aria-label="Primary">
           <a href="#how-it-works">How it works</a>
+          <a href="#ai-workflow">AI workflow</a>
           <a href="#security">Security</a>
           <a href="#who-its-for">Who it’s for</a>
           <a href="#features">Features</a>
-          <a href="#stack">Stack</a>
+          <a href="#product">Product</a>
           <a class="nav-cta" href="#download">Download</a>
         </nav>
       </div>
@@ -61,18 +62,19 @@
               <span class="hero-line2">Word output with <em>your</em> template.</span>
             </h1>
             <p class="lead">
-              <strong>m6n</strong> runs on your computer: fast, small footprint, live preview. Export clean
-              <strong>DOCX</strong> that follows <strong>your</strong> Word styles — corporate letterhead, thesis layout, or
-              personal boilerplate. No mandatory cloud; your drafts stay local.
+              <strong>m6n</strong> is fast, focused, and small: live preview, then export clean <strong>DOCX</strong> that
+              follows <strong>your</strong> Word styles — corporate letterhead, thesis layout, or personal boilerplate.
+              Got a long draft from an AI assistant as Markdown? Stop losing hours re-applying headings and styles in Word:
+              attach your template and export in moments. No mandatory cloud; your drafts stay on your machine.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" id="link-releases" href="https://github.com/m6n/m6n/releases">Download releases</a>
               <a class="btn btn-ghost" id="link-repo" href="https://github.com/m6n/m6n">Source on GitHub</a>
             </div>
             <ul class="hero-trust" aria-label="At a glance">
-              <li>Local-first processing</li>
-              <li>No telemetry in the core</li>
-              <li>Lightweight Tauri app</li>
+              <li>Fast &amp; functional</li>
+              <li>Small &amp; optimized</li>
+              <li>Always evolving</li>
               <li>Open source (MIT)</li>
             </ul>
           </div>
@@ -105,8 +107,11 @@
         <ol class="steps">
           <li class="step-card">
             <span class="step-num">1</span>
-            <h3>Write in Markdown</h3>
-            <p>Syntax highlighting, search, and live preview so you stay in flow — even for long documents.</p>
+            <h3>Write or paste Markdown</h3>
+            <p>
+              Compose in the editor, or paste output from another tool — including long drafts from an AI assistant. Syntax
+              highlighting, search, and live preview keep you oriented.
+            </p>
           </li>
           <li class="step-card">
             <span class="step-num">2</span>
@@ -124,7 +129,38 @@
         </ol>
       </section>
 
-      <section class="section section-tint wrap" id="security" aria-labelledby="title-security">
+      <section class="section section-tint wrap" id="ai-workflow" aria-labelledby="title-ai">
+        <h2 id="title-ai" class="section-title">From AI-generated Markdown to polished Word — fast</h2>
+        <p class="section-lead">
+          Large language models are great at producing Markdown. Turning that into a client-ready or policy-compliant Word
+          document is usually slow: copy-paste, fix headings, fix styles, fix spacing — again and again.
+        </p>
+        <ul class="ai-points">
+          <li class="ai-point">
+            <h3>The bottleneck isn’t the draft</h3>
+            <p>
+              It’s mapping unstructured or semi-structured Markdown onto <strong>your</strong> official template. That
+              manual step doesn’t scale when you iterate with AI often.
+            </p>
+          </li>
+          <li class="ai-point">
+            <h3>m6n closes the gap</h3>
+            <p>
+              Keep the speed of generating in Markdown; let m6n apply <strong>your</strong> template on export so the DOCX
+              already matches house style — in a fraction of the time you’d spend fixing Word by hand.
+            </p>
+          </li>
+          <li class="ai-point">
+            <h3>Same privacy story</h3>
+            <p>
+              Conversion runs on your computer. You choose what leaves your machine; m6n doesn’t require you to ship your
+              manuscript through a third-party formatter to get a templated Word file.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section wrap" id="security" aria-labelledby="title-security">
         <h2 id="title-security" class="section-title">Security &amp; privacy</h2>
         <p class="section-lead">
           Built for people who care where text lives and what phones home.
@@ -143,16 +179,17 @@
             <p>Templates live in your library on disk. You choose what to use; nothing is forced from a remote catalog.</p>
           </li>
           <li class="security-card">
-            <h3>Small attack surface</h3>
-            <p>A compact native shell (Tauri) instead of a full browser stack keeps the app lighter and easier to reason about.</p>
+            <h3>Lean by design</h3>
+            <p>A small, focused app keeps things simple: less surface area, less to trust — and a download that stays modest.</p>
           </li>
         </ul>
       </section>
 
-      <section class="section wrap" id="who-its-for" aria-labelledby="title-who">
+      <section class="section section-alt wrap" id="who-its-for" aria-labelledby="title-who">
         <h2 id="title-who" class="section-title">Who it’s for</h2>
         <p class="section-lead">
-          Anyone who likes Markdown but must deliver Word that matches an existing template.
+          Anyone who likes Markdown but must deliver Word that matches an existing template — including teams that pair AI
+          drafting with strict document standards.
         </p>
         <ul class="audience-grid">
           <li class="audience-card">
@@ -164,25 +201,29 @@
             <p>Draft fast in Markdown; hand off DOCX that already follows the client’s template.</p>
           </li>
           <li class="audience-card">
+            <h3>AI-assisted writers</h3>
+            <p>Iterate in Markdown with your favorite assistant, then export to templated Word without a formatting marathon.</p>
+          </li>
+          <li class="audience-card">
             <h3>School &amp; research</h3>
             <p>Notes in Markdown; submissions in the official Word layout when required.</p>
           </li>
         </ul>
       </section>
 
-      <section class="section section-alt wrap" id="features" aria-labelledby="title-features">
+      <section class="section wrap" id="features" aria-labelledby="title-features">
         <h2 id="title-features" class="section-title">Features</h2>
         <p class="section-lead">Focused tooling: edit, template, export — without bloat.</p>
         <ul class="feature-grid">
           <li class="feature-card">
             <span class="feature-icon" aria-hidden="true">—</span>
             <h3>Editor &amp; preview</h3>
-            <p>CodeMirror-powered editing with live Markdown preview for clarity and speed.</p>
+            <p>Comfortable writing environment with live Markdown preview so you see structure before you export.</p>
           </li>
           <li class="feature-card">
             <span class="feature-icon" aria-hidden="true">—</span>
             <h3>Templated DOCX export</h3>
-            <p>Output respects <strong>your</strong> Word structure and styles — the main reason to use m6n alongside a plain editor.</p>
+            <p>Output respects <strong>your</strong> Word structure and styles — the main reason to use m6n alongside a plain editor or AI output.</p>
           </li>
           <li class="feature-card">
             <span class="feature-icon" aria-hidden="true">—</span>
@@ -191,8 +232,8 @@
           </li>
           <li class="feature-card">
             <span class="feature-icon" aria-hidden="true">—</span>
-            <h3>Light &amp; native</h3>
-            <p>Tauri keeps the install lean compared with embedding a full browser runtime for everyday writing.</p>
+            <h3>Fast, small, optimized</h3>
+            <p>Built to start quickly, stay responsive, and keep disk footprint modest — so it stays out of your way.</p>
           </li>
           <li class="feature-card">
             <span class="feature-icon" aria-hidden="true">—</span>
@@ -202,16 +243,18 @@
         </ul>
       </section>
 
-      <section class="section wrap" id="stack" aria-labelledby="title-stack">
-        <h2 id="title-stack" class="section-title">Stack</h2>
+      <section class="section section-alt wrap" id="product" aria-labelledby="title-product">
+        <h2 id="title-product" class="section-title">The product</h2>
         <p class="section-lead">
-          Modern UI, Rust conversion pipeline — chosen for responsiveness and a smaller footprint than typical Electron apps.
+          We don’t lead with frameworks — we lead with how it feels to use. m6n is built to be quick to run, easy to work in,
+          and continuously improved.
         </p>
-        <ul class="stack-pills" role="list">
-          <li><span class="pill">Tauri 2</span> Lightweight native shell</li>
-          <li><span class="pill">Svelte 5</span> Fast, minimal UI runtime</li>
-          <li><span class="pill">Rust</span> Markdown → DOCX conversion</li>
-          <li><span class="pill">CodeMirror 6</span> Text editor engine</li>
+        <ul class="product-highlights" role="list">
+          <li><strong>Fast</strong> — Snappy editing and export so you spend time on content, not waiting.</li>
+          <li><strong>Functional</strong> — Everything you need for Markdown → templated Word, nothing superfluous.</li>
+          <li><strong>Small</strong> — A compact install that respects your disk and your attention.</li>
+          <li><strong>Optimized</strong> — Tuned for everyday documents, from short notes to long AI-assisted drafts.</li>
+          <li><strong>Always expanding</strong> — Open development; feedback and contributions shape what ships next.</li>
         </ul>
       </section>
 
